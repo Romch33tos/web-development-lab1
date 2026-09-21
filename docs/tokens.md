@@ -221,3 +221,60 @@
 - Что происходит с hero-изображением на мобильном (обрезается, заменяется, скрывается)
 
 ---
+
+## 13. Сводка токенов для `:root`
+
+```css
+:root {
+  /* Контейнер */
+  --container: 1140px;
+  --grid-gap: 24px;
+
+  /* Типографика */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --step--2: 0.8125rem;   /* 13px */
+  --step--1: 0.875rem;    /* 14px */
+  --step-0: 1rem;         /* 16px */
+  --step-1: 1.125rem;     /* 18px */
+  --step-2: 1.25rem;      /* 20px */
+  --step-4: 1.75rem;      /* 28px */
+  --step-5: 2.5rem;       /* 40px */
+  --step-6: 4rem;         /* 64px */
+  --tracking-wide: 0.08em;
+
+  /* Цвета */
+  --color-accent: #7C3AED;
+  --color-accent-hover: #6D28D9;
+  --color-text: #111827;
+  --color-text-muted: #4B5563;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F3F4F6;
+  --color-border: #D1D5DB;
+  --color-border-light: #E5E7EB;
+  --color-on-accent: #FFFFFF;
+
+  /* Отступы */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Радиусы */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 50%;
+
+  /* Тени и границы */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-form: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --border-width: 1px;
+}
