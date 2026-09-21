@@ -152,3 +152,16 @@
 | Disclaimer | `.disclaimer` | базовая | страница блога |
 
 ---
+
+## 9. Состояния элементов
+
+| Элемент | Обычное | Hover | Focus | Active | Disabled |
+|---------|---------|-------|-------|--------|----------|
+| Кнопка `--primary` | фон `--color-accent`, текст `--color-on-accent` | фон `--color-accent-hover` | обводка `--color-accent` | затемнение | прозрачность 0.5 |
+| Кнопка `--ghost` | прозрачный фон, текст `--color-text` | фон `--color-surface-alt` | обводка `--color-accent` | — | — |
+| Ссылка в навигации | текст `--color-text` | цвет `--color-accent` | обводка `--color-accent` | — | — |
+| Активная ссылка | текст `--color-accent` | — | — | — | — |
+| Поле формы | граница `--color-border` | граница `--color-text-muted` | граница `--color-accent`, обводка | — | — |
+| Кнопка play | фон `--color-accent` | затемнение | обводка `--color-accent` | — | — |
+
+---
