@@ -416,3 +416,38 @@ p {
   background: var(--color-accent);
   color: var(--color-on-accent);
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-7) var(--space-9) var(--space-7) 140px;
+  max-width: 765px;
+  min-height: 580px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  max-width: 505px;
+}
+
+.hero__title {
+  font-size: var(--step-6);
+  line-height: 84px;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-accent);
+}
+
+.hero__title .accent {
+  color: var(--color-accent);
+}
+
+.hero__description {
+  font-size: var
