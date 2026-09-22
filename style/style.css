@@ -561,17 +561,12 @@ p {
 .join {
   position: relative;
   padding-block: var(--space-8);
-  background: var(--color-surface-alt);
+  background-color: var(--color-surface-alt);
+  background-image: url("../img/join-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   overflow: hidden;
-}
-
-.join::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(138, 83, 255, 0.08) 1px, transparent 1px);
-  background-size: 24px 24px;
-  pointer-events: none;
 }
 
 .join__inner {
@@ -1102,6 +1097,10 @@ p {
 
   .highlights__grid {
     grid-template-columns: 1fr;
+  }
+
+  .join {
+    background-image: none;
   }
 
   .site-footer__inner {
