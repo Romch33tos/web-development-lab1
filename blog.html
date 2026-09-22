@@ -155,6 +155,73 @@
 
     </article>
 
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="join__inner">
+        <p class="eyebrow eyebrow--center">Let’s build a community</p>
+        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+
+        <form class="join__form" action="#" method="post" novalidate>
+          <div class="join__form-text">
+            <h3 class="join__form-title">Share your travels</h3>
+            <p class="join__form-description">
+              Suggest a new travel destination that you want to see and we will
+              feature it in our blog.
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="destination-name-blog">Destination name</label>
+            <input class="field__input" id="destination-name-blog" name="destination-name"
+                   type="text" placeholder="Destination name" autocomplete="off">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="country-blog">Country of Destination</label>
+            <select class="field__input" id="country-blog" name="country">
+              <option value="">Country of Destination</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="author-name-blog">Your name</label>
+            <input class="field__input" id="author-name-blog" name="author-name"
+                   type="text" placeholder="Your name" autocomplete="name">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="shooting-category-blog">Shooting category</label>
+            <select class="field__input" id="shooting-category-blog" name="shooting-category">
+              <option value="">Shooting category</option>
+            </select>
+          </div>
+
+          <div class="field field--textarea">
+            <label class="field__label visually-hidden" for="description-blog">
+              Describe what kind of photos you want to focus on
+            </label>
+            <textarea class="field__input" id="description-blog" name="description" rows="3"
+                      placeholder="Describe what kind of photos you want to focus on"></textarea>
+          </div>
+
+          <button class="button button--primary join__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copyright">© 2022, Talking Travel. All Rights Reserved.</p>
+      <nav class="site-footer__nav" aria-label="Навигация в подвале">
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="./index.html">Home</a></li>
+          <li><a class="site-footer__link" href="./blog.html">Blog</a></li>
+          <li><a class="site-footer__link" href="#">Gallery</a></li>
+          <li><a class="site-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
