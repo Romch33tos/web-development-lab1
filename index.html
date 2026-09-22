@@ -86,6 +86,101 @@
       </div>
     </section>
 
+    <section class="destinations" aria-labelledby="destinations-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Join our adventures</p>
+        <h2 class="section-title" id="destinations-title">Discover the world with us</h2>
+
+        <ul class="card-grid">
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-iceland.jpg"
+                   alt="Пейзаж Исландии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Iceland</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-italy.jpg"
+                   alt="Пейзаж Италии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Italy</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-dubai.jpg"
+                   alt="Панорама Дубая" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Dubai</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-patagonia.jpg"
+                   alt="Горные вершины Патагонии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Patagonia</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="join__inner">
+        <p class="eyebrow eyebrow--center">Let’s build a community</p>
+        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+
+        <form class="join__form" action="#" method="post" novalidate>
+          <div class="join__form-text">
+            <h3 class="join__form-title">Share your travels</h3>
+            <p class="join__form-description">
+              Suggest a new travel destination that you want to see and we will
+              feature it in our blog.
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="destination-name">Destination name</label>
+            <input class="field__input" id="destination-name" name="destination-name"
+                   type="text" placeholder="Destination name" autocomplete="off">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="country">Country of Destination</label>
+            <select class="field__input" id="country" name="country">
+              <option value="">Country of Destination</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="author-name">Your name</label>
+            <input class="field__input" id="author-name" name="author-name"
+                   type="text" placeholder="Your name" autocomplete="name">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="shooting-category">Shooting category</label>
+            <select class="field__input" id="shooting-category" name="shooting-category">
+              <option value="">Shooting category</option>
+            </select>
+          </div>
+
+          <div class="field field--textarea">
+            <label class="field__label visually-hidden" for="description">
+              Describe what kind of photos you want to focus on
+            </label>
+            <textarea class="field__input" id="description" name="description" rows="3"
+                      placeholder="Describe what kind of photos you want to focus on"></textarea>
+          </div>
+
+          <button class="button button--primary join__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
