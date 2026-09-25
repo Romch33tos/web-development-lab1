@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Switzerland! — Talking Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="./index.html" aria-label="Talking Travel — на главную">
+        <img class="logo__image" src="./img/logo.svg" alt="" width="100" height="64">
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="./index.html">Home</a></li>
+          <li><a class="site-nav__link site-nav__link--active" href="./blog.html" aria-current="page">Story</a></li>
+          <li><a class="site-nav__link" href="#">Gallery</a></li>
+          <li><a class="site-nav__link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button icon-button--search" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+            <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a class="icon-button icon-button--profile" href="#" aria-label="Профиль">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="8" r="4" fill="currentColor"/>
+            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <article class="post">
+
+      <header class="post__header">
+        <div class="post__intro">
+          <p class="eyebrow">Popular destinations</p>
+          <h1 class="post__title" id="post-title">Hello Switzerland!</h1>
+        </div>
+        <div class="post__author">
+          <img class="post__author-avatar" src="./img/author-darrell.jpg" alt="" width="35" height="35">
+          <p class="post__author-text">
+            <span class="post__author-name">Darrell Steward</span>
+            <span class="post__author-role">Author / Photographer</span>
+          </p>
+        </div>
+      </header>
+
+      <figure class="post__media">
+        <img class="post__image" src="./img/switzerland-hero.jpg"
+             alt="Путешественник на фоне горы Маттерхорн" width="912" height="540">
+        <figcaption class="visually-hidden">Видео: The Matterhorn</figcaption>
+        <button class="play-button play-button--xl" type="button" aria-label="Воспроизвести видео о Маттерхорне">
+          <svg width="52" height="52" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+            <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </figure>
+
+      <section class="post__clincher" aria-labelledby="clincher-title">
+        <h2 class="post__clincher-title" id="clincher-title">Our Swiss adventure story</h2>
+        <p>
+          Location location location! Zermatt Switzerland offers majestic landscapes that
+          cannot be seen elsewhere. The Matterhorn for example. This peak is a sight to
+          behold and seeing it upclose is more magical that we’ve ever imagined.
+          Want to enjoy a nice and cozy swiss breakfast? Well, Zermatt will never fail you.
+        </p>
+      </section>
+
+      <section class="callout" aria-labelledby="callout-title">
+        <div class="callout__media">
+          <img class="callout__image callout__image--tall" src="./img/swiss-winter.jpg"
+               alt="Заснеженные склоны Швейцарии" width="220" height="481" loading="lazy">
+          <div class="callout__media-column">
+            <img class="callout__image" src="./img/swiss-mountains.jpg"
+                 alt="Горные вершины Швейцарии" width="220" height="261" loading="lazy">
+            <img class="callout__image" src="./img/swiss-sunset.jpg"
+                 alt="Закат в швейцарских Альпах" width="220" height="202" loading="lazy">
+          </div>
+        </div>
+
+        <div class="callout__content">
+          <blockquote class="callout__quote">
+            <svg class="callout__quote-mark" width="35" height="26" viewBox="0 0 35 26" fill="none" aria-hidden="true" focusable="false">
+              <path d="M0 26 L8 0 L16 0 L12 26 Z M19 26 L27 0 L35 0 L31 26 Z" fill="currentColor"/>
+            </svg>
+            <p id="callout-title">One of the best hikes we’ve done so far…</p>
+          </blockquote>
+          <p class="callout__text">
+            As one of the alpine countries, landlocked Switzerland with her mountains has
+            to compete not only with her neighbours but with other destinations. There are,
+            e.g., no coastal resorts. The advantage is that tourism in Switzerland benefits
+            of a large diversity of beautiful landscapes in a relatively small space.
+          </p>
+          <a class="button button--primary" href="#">View full gallery</a>
+        </div>
+      </section>
+
+      <section class="post__conclusion" aria-label="Заключение">
+        <p>
+          The advantage is that tourism in Switzerland benefits of a large diversity of
+          beautiful landscapes in a relatively small space, offering many possibilities
+          for various activities all the year round, in all seasons, although primarily
+          in summer and winter. The offers of nature as well as culture are manifold,
+          but unfortunately price levels throughout the country are high, and this can
+          discourage many people from visiting. Despite this major drawback, millions
+          of visitors from all over the world arrive(d) every year.
+        </p>
+      </section>
+
+      <section class="highlights" aria-labelledby="highlights-title">
+        <h2 class="highlights__title" id="highlights-title">Highlights</h2>
+        <ul class="highlights__grid">
+          <li>
+            <figure class="highlight">
+              <img class="highlight__image" src="./img/highlight-barns.jpg"
+                   alt="Старинные амбары в швейцарских Альпах" width="289" height="347" loading="lazy">
+              <figcaption class="highlight__caption">The barns built in the 13th and 14th century</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="highlight">
+              <img class="highlight__image" src="./img/highlight-bernina.jpg"
+                   alt="Поезд Bernina Express на виадуке" width="289" height="347" loading="lazy">
+              <figcaption class="highlight__caption">Riding the amazing Bernina Express</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="highlight">
+              <img class="highlight__image" src="./img/highlight-cablecar.jpg"
+                   alt="Канатная дорога на Маттерхорн" width="289" height="347" loading="lazy">
+              <figcaption class="highlight__caption">The Matterhorn glacier cable car ride</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="disclaimer" aria-labelledby="disclaimer-title">
+        <h2 class="disclaimer__title visually-hidden" id="disclaimer-title">Disclaimer</h2>
+        <p class="disclaimer__text">
+          The COVID-19 pandemic has dealt a severe blow to the tourism business in
+          Switzerland. Although it is a minor position in the Swiss export balance,
+          it is nevertheless of considerable importance for those regions of the
+          country that attract domestic and foreign visitors. As a consequence of
+          the lockdown measures, combined with close borders and travel bans, tourism
+          collapsed and only briefly and partly recovered in summer. Its future is
+          uncertain and depends on people’s (future guests’) attitudes and decisions
+          as much as on the economy, political measures and, of course, the progress
+          of the pandemic.
+        </p>
+      </aside>
+
+    </article>
+
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="join__inner">
+        <p class="eyebrow eyebrow--center">Let’s build a community</p>
+        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+
+        <form class="join__form" action="#" method="post" novalidate>
+          <div class="join__form-text">
+            <h3 class="join__form-title">Share your travels</h3>
+            <p class="join__form-description">
+              Suggest a new travel destination that you want to see and we will
+              feature it in our blog.
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="destination-name-blog">Destination name</label>
+            <input class="field__input" id="destination-name-blog" name="destination-name"
+                   type="text" placeholder="Destination name" autocomplete="off">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="country-blog">Country of Destination</label>
+            <select class="field__input" id="country-blog" name="country">
+              <option value="">Country of Destination</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="author-name-blog">Your name</label>
+            <input class="field__input" id="author-name-blog" name="author-name"
+                   type="text" placeholder="Your name" autocomplete="name">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="shooting-category-blog">Shooting category</label>
+            <select class="field__input" id="shooting-category-blog" name="shooting-category">
+              <option value="">Shooting category</option>
+            </select>
+          </div>
+
+          <div class="field field--textarea">
+            <label class="field__label visually-hidden" for="description-blog">
+              Describe what kind of photos you want to focus on
+            </label>
+            <textarea class="field__input" id="description-blog" name="description" rows="3"
+                      placeholder="Describe what kind of photos you want to focus on"></textarea>
+          </div>
+
+          <button class="button button--primary join__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copyright">© 2022, Talking Travel. All Rights Reserved.</p>
+      <nav class="site-footer__nav" aria-label="Навигация в подвале">
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="./index.html">Home</a></li>
+          <li><a class="site-footer__link" href="./blog.html">Blog</a></li>
+          <li><a class="site-footer__link" href="#">Gallery</a></li>
+          <li><a class="site-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

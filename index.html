@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talking Travel — сообщество путешественников</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="./index.html" aria-label="Talking Travel — на главную">
+        <img class="logo__image" src="./img/logo.svg" alt="" width="100" height="64">
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link site-nav__link--active" href="./index.html" aria-current="page">Home</a></li>
+          <li><a class="site-nav__link" href="./blog.html">Story</a></li>
+          <li><a class="site-nav__link" href="#">Gallery</a></li>
+          <li><a class="site-nav__link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button icon-button--search" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+            <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a class="icon-button icon-button--profile" href="#" aria-label="Профиль">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="8" r="4" fill="currentColor"/>
+            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            <span class="accent">Let’s talk</span> about your next trip!
+          </h1>
+          <p class="hero__description">
+            Share your favorite travel destination and we will feature it in our next blog!
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#join">Share your story</a>
+            <a class="button button--ghost" href="#">
+              <span class="button__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false">
+                  <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
+                </svg>
+              </span>
+              Watch highlights
+            </a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img class="hero__image" src="./img/hero.jpg" alt="" width="765" height="580">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="container featured__inner">
+        <div class="featured__media">
+          <img class="featured__image" src="./img/featured-swiss.jpg"
+               alt="Путешественник на фоне горы Маттерхорн"
+               width="540" height="338" loading="lazy">
+        </div>
+        <div class="featured__content">
+          <p class="eyebrow">Featured destination</p>
+          <h2 class="featured__title" id="featured-title">Our swiss adventure blog</h2>
+          <p class="featured__description">
+            Visiting the swiss alps? Want to know the requirements on travelling to
+            Switzerland during the pandemic? Our blog might help!
+          </p>
+          <a class="link-with-icon" href="./blog.html">
+            <span class="link-with-icon__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false">
+                <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
+              </svg>
+            </span>
+            Watch Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations" aria-labelledby="destinations-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Join our adventures</p>
+        <h2 class="section-title section-title--center" id="destinations-title">Discover the world with us</h2>
+
+        <ul class="card-grid">
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-iceland.jpg"
+                   alt="Пейзаж Исландии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Iceland</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-italy.jpg"
+                   alt="Пейзаж Италии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Italy</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-dubai.jpg"
+                   alt="Панорама Дубая" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Dubai</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card__image" src="./img/destination-patagonia.jpg"
+                   alt="Горные вершины Патагонии" width="268" height="317" loading="lazy">
+              <h3 class="card__title">Patagonia</h3>
+              <a class="card__link" href="#">Discover</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="join__inner">
+        <p class="eyebrow eyebrow--center">Let’s build a community</p>
+        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+
+        <form class="join__form" action="#" method="post" novalidate>
+          <div class="join__form-text">
+            <h3 class="join__form-title">Share your travels</h3>
+            <p class="join__form-description">
+              Suggest a new travel destination that you want to see and we will
+              feature it in our blog.
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="destination-name">Destination name</label>
+            <input class="field__input" id="destination-name" name="destination-name"
+                   type="text" placeholder="Destination name" autocomplete="off">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="country">Country of Destination</label>
+            <select class="field__input" id="country" name="country">
+              <option value="">Country of Destination</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label visually-hidden" for="author-name">Your name</label>
+            <input class="field__input" id="author-name" name="author-name"
+                   type="text" placeholder="Your name" autocomplete="name">
+          </div>
+
+          <div class="field field--select">
+            <label class="field__label visually-hidden" for="shooting-category">Shooting category</label>
+            <select class="field__input" id="shooting-category" name="shooting-category">
+              <option value="">Shooting category</option>
+            </select>
+          </div>
+
+          <div class="field field--textarea">
+            <label class="field__label visually-hidden" for="description">
+              Describe what kind of photos you want to focus on
+            </label>
+            <textarea class="field__input" id="description" name="description" rows="3"
+                      placeholder="Describe what kind of photos you want to focus on"></textarea>
+          </div>
+
+          <button class="button button--primary join__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="recent" aria-labelledby="recent-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Catch up to our posts</p>
+        <h2 class="section-title section-title--center" id="recent-title">Recent story entries</h2>
+
+        <div class="recent__grid">
+          <article class="post-card post-card--featured">
+            <img class="post-card__image" src="./img/post-zermatt.jpg"
+                 alt="Гора Маттерхорн в Церматте" width="560" height="358" loading="lazy">
+            <div class="post-card__body">
+              <div class="post-card__text">
+                <h3 class="post-card__title">
+                  <a class="post-card__link" href="./blog.html#post-zermatt">Zermatt, Switzerland</a>
+                </h3>
+                <p class="post-card__description">
+                  Marvel on the beauty of the iconic Matterhorn. Find the best places
+                  to stay that has the best views of this peak…
+                </p>
+              </div>
+              <button class="play-button play-button--lg" type="button" aria-label="Воспроизвести видео о Церматте">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <ul class="post-list">
+            <li>
+              <article class="post-card post-card--small">
+                <img class="post-card__image" src="./img/post-tuscany.jpg"
+                     alt="Пейзаж Тосканы" width="200" height="128" loading="lazy">
+                <div class="post-card__text">
+                  <h3 class="post-card__title">
+                    <a class="post-card__link" href="./blog.html#post-tuscany">Tuscany, Italy</a>
+                  </h3>
+                  <p class="post-card__description">
+                    The amazing Tuscany is home to famous Renaissance art and
+                    architecture and a vast scenic landscape.
+                    <a class="post-card__more" href="./blog.html#post-tuscany">view full blog…</a>
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="post-card post-card--small">
+                <img class="post-card__image" src="./img/post-kyoto.jpg"
+                     alt="Улица Киото с традиционными домами" width="200" height="128" loading="lazy">
+                <div class="post-card__text">
+                  <h3 class="post-card__title">
+                    <a class="post-card__link" href="./blog.html#post-kyoto">Kyoto, Japan</a>
+                  </h3>
+                  <p class="post-card__description">
+                    Kyoto is well known for its temples, gardens, Shinto shrines and
+                    wooden houses. It’s time to visit tokyo.
+                    <a class="post-card__more" href="./blog.html#post-kyoto">view full blog…</a>
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="post-card post-card--small">
+                <img class="post-card__image" src="./img/post-lofoten.jpg"
+                     alt="Острова Лофотен с заснеженными вершинами" width="200" height="128" loading="lazy">
+                <div class="post-card__text">
+                  <h3 class="post-card__title">
+                    <a class="post-card__link" href="./blog.html#post-lofoten">Lofoten Islands, Norway</a>
+                  </h3>
+                  <p class="post-card__description">
+                    Featuring razor-sharp peaks housing the arctic landscape. This
+                    astonishing island is perfect for your next postcard.
+                    <a class="post-card__more" href="./blog.html#post-lofoten">view full blog…</a>
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copyright">© 2022, Talking Travel. All Rights Reserved.</p>
+      <nav class="site-footer__nav" aria-label="Навигация в подвале">
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="./index.html">Home</a></li>
+          <li><a class="site-footer__link" href="./blog.html">Blog</a></li>
+          <li><a class="site-footer__link" href="#">Gallery</a></li>
+          <li><a class="site-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
