@@ -22,10 +22,10 @@ web-development-lab1/
 
 ## Декомпозиция и оценка
 Подробная таблица разбивки макета, а также трехточечная оценка трудоёмкости (O, M, P) находятся в файле:
-[decomposition.md](https://github.com/Romch33tos/web-development-lab1/blob/docs/decomposition.md)
+[decomposition.md](https://github.com/Romch33tos/web-development-lab1/blob/main/docs/decomposition.md)
 
 Словарь используемых токенов (цвета, размеры шрифтов, отступы) вынесен в
-[tokens.md](https://github.com/Romch33tos/web-development-lab1/blob/docs/tokens.md)
+[tokens.md](https://github.com/Romch33tos/web-development-lab1/blob/main/docs/tokens.md)
 
 ## Скриншоты
-Скриншоты страниц для различных разрешений доступны в папке [screenshots](https://github.com/Romch33tos/web-development-lab1/screenshots)
+Скриншоты страниц для различных разрешений доступны в папке [screenshots](https://github.com/Romch33tos/web-development-lab1/tree/main/screenshots)
