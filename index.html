@@ -28,14 +28,14 @@
       </nav>
 
       <div class="site-header__actions">
-        <button class="icon-button icon-button--search" type="button" aria-label="Поиск">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
             <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </button>
-        <a class="icon-button icon-button--profile" href="#" aria-label="Профиль">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <a class="icon-button" href="#" aria-label="Профиль">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <circle cx="12" cy="8" r="4" fill="currentColor"/>
             <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor"/>
           </svg>
@@ -46,11 +46,12 @@
 
   <main id="main">
 
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" aria-label="Главный баннер">
       <div class="hero__inner">
         <div class="hero__content">
-          <h1 class="hero__title" id="hero-title">
-            <span class="accent">Let’s talk</span> about your next trip!
+          <h1 class="hero__title">
+            <span class="hero__title-accent">Let’s talk</span>
+            <span class="hero__title-dark">about your next trip!</span>
           </h1>
           <p class="hero__description">
             Share your favorite travel destination and we will feature it in our next blog!
@@ -59,7 +60,7 @@
             <a class="button button--primary" href="#join">Share your story</a>
             <a class="button button--ghost" href="#">
               <span class="button__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
                 </svg>
               </span>
@@ -73,7 +74,7 @@
       </div>
     </section>
 
-    <section class="featured" aria-labelledby="featured-title">
+    <section class="featured" aria-label="Избранное направление">
       <div class="container featured__inner">
         <div class="featured__media">
           <img class="featured__image" src="./img/featured-swiss.jpg"
@@ -82,14 +83,14 @@
         </div>
         <div class="featured__content">
           <p class="eyebrow">Featured destination</p>
-          <h2 class="featured__title" id="featured-title">Our swiss adventure blog</h2>
+          <h2 class="featured__title">Our swiss adventure blog</h2>
           <p class="featured__description">
             Visiting the swiss alps? Want to know the requirements on travelling to
             Switzerland during the pandemic? Our blog might help!
           </p>
           <a class="link-with-icon" href="./blog.html">
             <span class="link-with-icon__icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
               </svg>
             </span>
@@ -99,10 +100,10 @@
       </div>
     </section>
 
-    <section class="destinations" aria-labelledby="destinations-title">
+    <section class="destinations" aria-label="Направления">
       <div class="container">
         <p class="eyebrow eyebrow--center">Join our adventures</p>
-        <h2 class="section-title section-title--center" id="destinations-title">Discover the world with us</h2>
+        <h2 class="section-title section-title--center">Discover the world with us</h2>
 
         <ul class="card-grid">
           <li>
@@ -141,10 +142,10 @@
       </div>
     </section>
 
-    <section class="join" id="join" aria-labelledby="join-title">
+    <section class="join" id="join" aria-label="Присоединиться">
       <div class="join__inner">
         <p class="eyebrow eyebrow--center">Let’s build a community</p>
-        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+        <h2 class="section-title section-title--center">Join our next destination</h2>
 
         <form class="join__form" action="#" method="post" novalidate>
           <div class="join__form-text">
@@ -156,33 +157,48 @@
           </div>
 
           <div class="field">
-            <label class="field__label visually-hidden" for="destination-name">Destination name</label>
+            <label class="visually-hidden" for="destination-name">Destination name</label>
             <input class="field__input" id="destination-name" name="destination-name"
                    type="text" placeholder="Destination name" autocomplete="off">
           </div>
 
           <div class="field field--select">
-            <label class="field__label visually-hidden" for="country">Country of Destination</label>
+            <label class="visually-hidden" for="country">Country of Destination</label>
             <select class="field__input" id="country" name="country">
               <option value="">Country of Destination</option>
+              <option value="is">Iceland</option>
+              <option value="it">Italy</option>
+              <option value="ae">United Arab Emirates</option>
+              <option value="ar">Argentina</option>
+              <option value="ch">Switzerland</option>
+              <option value="jp">Japan</option>
+              <option value="no">Norway</option>
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+              <option value="es">Spain</option>
             </select>
           </div>
 
           <div class="field">
-            <label class="field__label visually-hidden" for="author-name">Your name</label>
+            <label class="visually-hidden" for="author-name">Your name</label>
             <input class="field__input" id="author-name" name="author-name"
                    type="text" placeholder="Your name" autocomplete="name">
           </div>
 
           <div class="field field--select">
-            <label class="field__label visually-hidden" for="shooting-category">Shooting category</label>
+            <label class="visually-hidden" for="shooting-category">Shooting category</label>
             <select class="field__input" id="shooting-category" name="shooting-category">
               <option value="">Shooting category</option>
+              <option value="landscape">Landscape</option>
+              <option value="portrait">Portrait</option>
+              <option value="street">Street</option>
+              <option value="architecture">Architecture</option>
+              <option value="wildlife">Wildlife</option>
             </select>
           </div>
 
           <div class="field field--textarea">
-            <label class="field__label visually-hidden" for="description">
+            <label class="visually-hidden" for="description">
               Describe what kind of photos you want to focus on
             </label>
             <textarea class="field__input" id="description" name="description" rows="3"
@@ -194,10 +210,10 @@
       </div>
     </section>
 
-    <section class="recent" aria-labelledby="recent-title">
+    <section class="recent" aria-label="Последние записи">
       <div class="container">
         <p class="eyebrow eyebrow--center">Catch up to our posts</p>
-        <h2 class="section-title section-title--center" id="recent-title">Recent story entries</h2>
+        <h2 class="section-title section-title--center">Recent story entries</h2>
 
         <div class="recent__grid">
           <article class="post-card post-card--featured">
@@ -214,7 +230,7 @@
                 </p>
               </div>
               <button class="play-button play-button--lg" type="button" aria-label="Воспроизвести видео о Церматте">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
                 </svg>
               </button>

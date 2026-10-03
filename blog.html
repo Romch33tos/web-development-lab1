@@ -28,14 +28,14 @@
       </nav>
 
       <div class="site-header__actions">
-        <button class="icon-button icon-button--search" type="button" aria-label="Поиск">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
             <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </button>
-        <a class="icon-button icon-button--profile" href="#" aria-label="Профиль">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <a class="icon-button" href="#" aria-label="Профиль">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <circle cx="12" cy="8" r="4" fill="currentColor"/>
             <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor"/>
           </svg>
@@ -45,13 +45,12 @@
   </header>
 
   <main id="main">
-
     <article class="post">
 
       <header class="post__header">
         <div class="post__intro">
           <p class="eyebrow">Popular destinations</p>
-          <h1 class="post__title" id="post-title">Hello Switzerland!</h1>
+          <h1 class="post__title">Hello Switzerland!</h1>
         </div>
         <div class="post__author">
           <img class="post__author-avatar" src="./img/author-darrell.jpg" alt="" width="35" height="35">
@@ -67,14 +66,14 @@
              alt="Путешественник на фоне горы Маттерхорн" width="912" height="540">
         <figcaption class="visually-hidden">Видео: The Matterhorn</figcaption>
         <button class="play-button play-button--xl" type="button" aria-label="Воспроизвести видео о Маттерхорне">
-          <svg width="52" height="52" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+          <svg width="52" height="52" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M6 4 L16 10 L6 16 Z" fill="currentColor"/>
           </svg>
         </button>
       </figure>
 
-      <section class="post__clincher" aria-labelledby="clincher-title">
-        <h2 class="post__clincher-title" id="clincher-title">Our Swiss adventure story</h2>
+      <section class="post__clincher" aria-label="Вступление">
+        <h2 class="post__clincher-title">Our Swiss adventure story</h2>
         <p>
           Location location location! Zermatt Switzerland offers majestic landscapes that
           cannot be seen elsewhere. The Matterhorn for example. This peak is a sight to
@@ -83,24 +82,20 @@
         </p>
       </section>
 
-      <section class="callout" aria-labelledby="callout-title">
+      <section class="callout" aria-label="Цитата и галерея">
         <div class="callout__media">
           <img class="callout__image callout__image--tall" src="./img/swiss-winter.jpg"
                alt="Заснеженные склоны Швейцарии" width="220" height="481" loading="lazy">
-          <div class="callout__media-column">
-            <img class="callout__image" src="./img/swiss-mountains.jpg"
-                 alt="Горные вершины Швейцарии" width="220" height="261" loading="lazy">
-            <img class="callout__image" src="./img/swiss-sunset.jpg"
-                 alt="Закат в швейцарских Альпах" width="220" height="202" loading="lazy">
-          </div>
+          <img class="callout__image" src="./img/swiss-mountains.jpg"
+               alt="Горные вершины Швейцарии" width="220" height="261" loading="lazy">
+          <img class="callout__image" src="./img/swiss-sunset.jpg"
+               alt="Закат в швейцарских Альпах" width="220" height="202" loading="lazy">
         </div>
 
         <div class="callout__content">
           <blockquote class="callout__quote">
-            <svg class="callout__quote-mark" width="35" height="26" viewBox="0 0 35 26" fill="none" aria-hidden="true" focusable="false">
-              <path d="M0 26 L8 0 L16 0 L12 26 Z M19 26 L27 0 L35 0 L31 26 Z" fill="currentColor"/>
-            </svg>
-            <p id="callout-title">One of the best hikes we’ve done so far…</p>
+            <img class="callout__quote-mark" src="./img/quotation.svg" alt="" width="35" height="26">
+            <p>One of the best hikes we’ve done so far…</p>
           </blockquote>
           <p class="callout__text">
             As one of the alpine countries, landlocked Switzerland with her mountains has
@@ -124,8 +119,8 @@
         </p>
       </section>
 
-      <section class="highlights" aria-labelledby="highlights-title">
-        <h2 class="highlights__title" id="highlights-title">Highlights</h2>
+      <section class="highlights" aria-label="Достопримечательности">
+        <h2 class="highlights__title">Highlights</h2>
         <ul class="highlights__grid">
           <li>
             <figure class="highlight">
@@ -151,8 +146,7 @@
         </ul>
       </section>
 
-      <aside class="disclaimer" aria-labelledby="disclaimer-title">
-        <h2 class="disclaimer__title visually-hidden" id="disclaimer-title">Disclaimer</h2>
+      <aside class="disclaimer" aria-label="Disclaimer">
         <p class="disclaimer__text">
           The COVID-19 pandemic has dealt a severe blow to the tourism business in
           Switzerland. Although it is a minor position in the Swiss export balance,
@@ -168,10 +162,10 @@
 
     </article>
 
-    <section class="join" id="join" aria-labelledby="join-title">
+    <section class="join" id="join" aria-label="Присоединиться">
       <div class="join__inner">
         <p class="eyebrow eyebrow--center">Let’s build a community</p>
-        <h2 class="section-title section-title--center" id="join-title">Join our next destination</h2>
+        <h2 class="section-title section-title--center">Join our next destination</h2>
 
         <form class="join__form" action="#" method="post" novalidate>
           <div class="join__form-text">
@@ -183,33 +177,48 @@
           </div>
 
           <div class="field">
-            <label class="field__label visually-hidden" for="destination-name-blog">Destination name</label>
+            <label class="visually-hidden" for="destination-name-blog">Destination name</label>
             <input class="field__input" id="destination-name-blog" name="destination-name"
                    type="text" placeholder="Destination name" autocomplete="off">
           </div>
 
           <div class="field field--select">
-            <label class="field__label visually-hidden" for="country-blog">Country of Destination</label>
+            <label class="visually-hidden" for="country-blog">Country of Destination</label>
             <select class="field__input" id="country-blog" name="country">
               <option value="">Country of Destination</option>
+              <option value="is">Iceland</option>
+              <option value="it">Italy</option>
+              <option value="ae">United Arab Emirates</option>
+              <option value="ar">Argentina</option>
+              <option value="ch">Switzerland</option>
+              <option value="jp">Japan</option>
+              <option value="no">Norway</option>
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+              <option value="es">Spain</option>
             </select>
           </div>
 
           <div class="field">
-            <label class="field__label visually-hidden" for="author-name-blog">Your name</label>
+            <label class="visually-hidden" for="author-name-blog">Your name</label>
             <input class="field__input" id="author-name-blog" name="author-name"
                    type="text" placeholder="Your name" autocomplete="name">
           </div>
 
           <div class="field field--select">
-            <label class="field__label visually-hidden" for="shooting-category-blog">Shooting category</label>
+            <label class="visually-hidden" for="shooting-category-blog">Shooting category</label>
             <select class="field__input" id="shooting-category-blog" name="shooting-category">
               <option value="">Shooting category</option>
+              <option value="landscape">Landscape</option>
+              <option value="portrait">Portrait</option>
+              <option value="street">Street</option>
+              <option value="architecture">Architecture</option>
+              <option value="wildlife">Wildlife</option>
             </select>
           </div>
 
           <div class="field field--textarea">
-            <label class="field__label visually-hidden" for="description-blog">
+            <label class="visually-hidden" for="description-blog">
               Describe what kind of photos you want to focus on
             </label>
             <textarea class="field__input" id="description-blog" name="description" rows="3"
