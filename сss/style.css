@@ -1120,7 +1120,7 @@ p {
     align-items: flex-start;
     gap: var(--space-3);
   }
-
+/* ===== footer ===== */
   .site-footer__list {
     flex-wrap: wrap;
     gap: var(--space-3);
